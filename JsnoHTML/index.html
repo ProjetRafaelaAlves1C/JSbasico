@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Clientes</title>
+     <script src="funcoes.js"></script>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <h2>Cadastro</h2>
+        <div>   
+            <p><input type="button" value="Seu Nome" onclick="nome=prompt('Digite seu Nome', '')">
+                <input type="button" value="Seu Email" onclick="email=prompt('Digite seu email', '')">
+                <input type="button" value="Valor Saque" onclick="saque=prompt('Digite o valor do saque', '')">
+                <input type="button" value="Cadastrar" onclick="listar(this.form.Area)">
+               <p><textarea name="Area" cols="40" rows="10"></textarea>  
+        </div>
+    </form>
+</body>
+</html>
