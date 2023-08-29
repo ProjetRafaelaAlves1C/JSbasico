@@ -9,9 +9,18 @@ form{
     font-style: oblique;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 100px;
+   
 }
 html{
     background-color: black;
+}
+div{
+    background-color: white;
+    width: 200px;
+    text-align: center;
+    margin-left: 850px;
+    margin-bottom: 100px;
 }
 
 
