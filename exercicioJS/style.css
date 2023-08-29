@@ -1,0 +1,18 @@
+input {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+form{
+    background-color: #9370DB;
+    font-style: oblique;
+    text-align: center;
+    margin-top: 20px;
+}
+html{
+    background-color: black;
+}
+
+
+
