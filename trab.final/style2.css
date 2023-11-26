@@ -1,0 +1,123 @@
+.page{
+    background-color: #000000;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    font-family:'Times New Roman', Times, serif ;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html{
+    background-color: #000000;
+    color: #fff;
+    border-color: #fff;
+    border: 30px;
+}
+h1{
+    text-align: center;
+    font-family: monospace;
+    
+}
+h2{
+    color: red;
+    font-size: 30px;
+}
+.s{
+    background-color: #000000;
+    color: #fff;
+}
+p{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+.wrapper {
+    width: 420px;
+    background-image: linear-gradient(65deg, black, blue) ;
+    border: 10px solid rgb(255, 255, 255);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    bottom: 100%;
+    top: 10%;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #ffffff;
+
+}
+.input-box i {
+position: absolute;
+right: 20px;
+top: 50%;
+transform: translateY(-50%);
+font-size: 20px;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #14e326c3;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+}
+
+[data-reveal="left"]{clip-path: inset(0 100% 0 0);}
+[data-reveal="left"].revealed{
+    animation: reveal-left 1.2s cubic-bezier(0.17, 0.97, 0.38, 1) forwards 300ms;
+}
+
+@keyframes reveal-left{
+    0%{clip-path: inset(0 100% 0 0);}
+    100%{clip-path: inset(0 0 0 0);}
+}
+
+[data-reveal="right"]{clip-path: inset(0 0 0 100%);}
+[data-reveal="right"].revealed{
+    animation: reveal-right 1.2s cubic-bezier(0.17, 0.97, 0.38, 1) forwards 300ms;
+}
+
+@keyframes reveal-right{
+    0%{clip-path: inset(0 0 0 100%);}
+    100%{clip-path: inset(0 0 0 0);}
+}
+

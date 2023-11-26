@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de forms com Regex</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="script2.js"></script>
+</head>
+<body>
+    <h1>Validação</h1>
+    <br>
+    <br>
+    <div  class="page">
+        <div class="wrapper">
+            <form  onsubmit="return validarFormulario();" action="">
+                <h1>Cadastro</h1>
+                <div class="input-box">
+                    <input type="text" id="nome" placeholder="Nome"  required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="email" placeholder="Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="dataNascimento" placeholder="Data de nascimento" required>
+                    <i class='bx bx-calendar-alt'></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="telefone" placeholder="Telefone" required>
+                    <i class='bx bxs-phone' ></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="cpf" placeholder="CPF" required>
+                    <i class='bx bxs-id-card'></i>
+                </div>
+                <button type="submit" class="btn">Validar</button>
+            </form>
+        </div>   
+  </div>
+
+   <br>
+   <br>
+   <br>
+    
+  <div class="s">
+    <h1 class="font-monospace">Introdução à Expressão Regular (Regex):</h1>
+
+    <p>Expressão Regular, comumente conhecida como Regex, é uma sequência de 
+    caracteres que define um padrão de busca. É uma poderosa ferramenta 
+    utilizada para realizar operações de busca, correspondência e manipulação 
+    de strings com base em padrões específicos. Regex é amplamente utilizado em 
+    programação, processamento de texto, análise de dados e outras áreas onde 
+    é necessário trabalhar com padrões de texto.</p>
+    
+    <h1 class="font-monospace">Sintaxe Básica:</h1>
+    
+    <p>As expressões regulares consistem em caracteres literais e metacaracteres que representam classes de caracteres ou quantificadores. Aqui estão alguns dos metacaracteres mais comuns:</p>
+    
+    <p>. (ponto): Correspondente a qualquer caractere, exceto quebra de linha.</p>
+    <p>*: Correspondente a zero ou mais ocorrências do caractere anterior.</p>
+    <p>+: Correspondente a uma ou mais ocorrências do caractere anterior.</p>
+    <p>?: Correspondente a zero ou uma ocorrência do caractere anterior.</p>
+    <p>^: Correspondente ao início de uma linha.</p>
+    <p>$: Correspondente ao final de uma linha.</p>
+    <p>[ ]: Correspondente a qualquer caractere dentro dos colchetes.</p>
+    <p>( ): Grupo de caracteres.</p>
+    <p>\: Escape de caracteres especiais.</p>
+    
+    <h1 class="font-monospace">Exemplos de Aplicações:</h1>
+    
+    <h2>Validação de E-mails:</h2>
+    
+    <p>Regex: ^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$</p>
+    <p>Descrição: Esta expressão regular valida um endereço de e-mail, garantindo que ele tenha o formato correto.</p>
+    <h2>Busca de Números de Telefone:</h2>
+    
+    <p>Regex: (\d{3})-(\d{4})-(\d{4})</p>
+    <p>Descrição: Esta expressão regular encontra números de telefone no formato XXXX-XXXX-XXXX.</p>
+    <h2>Extração de Tags HTML:</h2>
+    
+    <p>Regex: <([a-z]+)>.*?<\/\1></p>
+    <p>Descrição: Essa expressão regular é usada para extrair conteúdo entre tags HTML, garantindo que as tags de abertura e fechamento correspondam.</p>
+    <h2>Validação de CPF:</h2>
+    
+    <p>Regex: \b\d{3}\.\d{3}\.\d{3}-\d{2}\b</p>
+    <p>Descrição: Esta expressão regular valida números de CPF no formato XXX.XXX.XXX-XX.</p>
+    <h2>Substituição de Texto:</h2>
+    
+    <p>Regex: s/(\d{2})\/(\d{2})\/(\d{4})/\3-\2-\1/</p>
+    <p>Descrição: Essa expressão regular é usada para reformatar datas de DD/MM/YYYY para YYYY-MM-DD.</p>
+    <h2>Validação de Senhas Fortes:</h2>
+    
+    <p>Regex: ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$</p>
+    <p>Descrição: Esta expressão regular valida senhas fortes que contenham pelo menos uma letra minúscula, uma letra maiúscula, um número e um caractere especial.</p>
+    <h1 class="font-monospace">Considerações Finais:</h1>
+    
+    <p>Expressões regulares são uma ferramenta poderosa para manipulação de strings, mas também podem ser complexas. É importante praticar e experimentar para se familiarizar com sua sintaxe e aplicação. Bibliotecas em várias linguagens de programação, como Python (com o módulo re), facilitam o uso eficiente de expressões regulares em projetos do mundo real.</p>
+  </div>
+
+    
+    
+   
+</body>
+</html>
